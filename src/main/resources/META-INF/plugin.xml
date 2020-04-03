@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>test.idea.idea-plugin</id>
+    <name>Print</name>
+
+    <description><![CDATA[
+    Simple plugin to print files.
+    Allows choosing file via default file tree.
+    Support #skip n command in file text to do not print this and n lines after.
+    ]]></description>
+    <vendor></vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action class="com.test.idea.PrintAction"
+                id="com.test.idea.PrintAction"
+                text="Chose and Print File">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+    </actions>
+</idea-plugin>
