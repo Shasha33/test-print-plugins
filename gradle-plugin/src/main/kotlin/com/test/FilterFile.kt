@@ -1,6 +1,12 @@
 package com.test
 
+import java.io.File
 import java.util.regex.Pattern
+
+fun filterFile(filename: String): String {
+    val lines = File(filename).readLines()
+    return filterFile(lines)
+}
 
 fun filterFile(lines: List<String>): String {
     var cnt = 0
